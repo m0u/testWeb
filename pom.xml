@@ -28,15 +28,15 @@
     
   </dependencies>
   <build>
-    <finalName>fileUpload</finalName>
-    <plugin>
- <artifactId>maven-war-plugin</artifactId>
- <version>2.2</version>
- <configuration>
-  <source>1.7</source>
-  <target>1.7</target>
-  <failOnMissingWebXml>false</failOnMissingWebXml>
- </configuration>
-</plugin>
-  </build>
+    <plugins>      
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>2.6</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>        
+    </plugins>
+  </build>	
 </project>
